@@ -27,7 +27,7 @@ This is a real Web3 DApp. The only centralised part is the Horizon API endpoint,
 | A terminal / command line | All install commands are run here |
 
 ---
-## Windows Setup — WSL + VS Code
+## Windows Setup — WSL
 
 **This section is for Windows users only. If you are on macOS or Linux, skip to Section 4.**
 
@@ -105,6 +105,13 @@ https://www.youtube.com/watch?v=zZf4YH4WiZo
 ---
 
 ## 3. Installation Guide
+
+Make sure you have an IDE installed. We recommend VS Code.
+
+**Download and install VS Code here:**
+
+https://code.visualstudio.com/download
+
 
 ### Step 1 - Install Node.js
 
