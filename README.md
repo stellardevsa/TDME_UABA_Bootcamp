@@ -27,6 +27,82 @@ This is a real Web3 DApp. The only centralised part is the Horizon API endpoint,
 | A terminal / command line | All install commands are run here |
 
 ---
+## Windows Setup — WSL + VS Code
+
+**This section is for Windows users only. If you are on macOS or Linux, skip to Section 4.**
+
+Windows does not natively run the Linux-based tools that Stellar development relies on. The solution is WSL (Windows Subsystem for Linux) — it gives you a real Ubuntu terminal running inside Windows. All your npm, node, and git commands will run from there.
+
+**A. Check if WSL is installed**
+Open PowerShell (press ``Win + S``, type “ ``PowerShell`` ”, and open it).
+
+
+Run this command:
+
+ ``wsl --version``
+
+
+If you see version info (e.g., ``WSL version: 2.1.5.0``), you already have it.
+
+
+If you see an error, WSL is not installed.
+
+
+
+**B. Install or Update WSL**
+In PowerShell (Run as Administrator), type:
+``wsl --install``
+
+This will install the latest WSL and set up Ubuntu by default.
+
+
+If you already have WSL installed, update it with:
+``wsl --update``
+
+
+**C. Make Sure You’re Using WSL 2**
+Run this command to set WSL 2 as the default:
+``wsl --set-default-version 2``
+
+👉 This is important because WSL 2 is faster and fully supports development tools.
+
+**D. Enable Windows Features**
+Search for “Turn Windows features on or off”.
+
+
+Check these two boxes:
+
+
+✅ Virtual Machine Platform
+
+
+✅ Windows Subsystem for Linux
+
+
+Click OK and restart your computer.
+
+
+
+**E. Install Ubuntu**
+Open the Microsoft Store.
+
+
+Search for Ubuntu and click Install.
+
+
+Open the Ubuntu app once installed.
+
+
+This will be the terminal you’ll use for coding.
+
+
+**👉 Need help? Watch this video:**
+How to Install WSL + Ubuntu 
+https://www.youtube.com/watch?v=zZf4YH4WiZo
+
+
+
+---
 
 ## 3. Installation Guide
 
@@ -1135,6 +1211,31 @@ You have just built a real decentralised marketplace on Stellar that:
 - Is ready to deploy to mainnet with a handful of targeted code changes
 
 The key concepts to carry forward are the **transaction lifecycle** (load → build → sign → submit), the role of **assets and issuers**, the **trustline** requirement, and why **Stellar Wallets Kit** saves you from writing dozens of wallet integrations by hand.
+
+
+# Stellar Developer Resources
+
+> Some important resources for building on Stellar.
+
+---
+
+| # | Resource | What it's for | URL |
+|---|---|---|---|
+| 1 | **Stellar Developer Docs** | The official starting point — guides, tutorials, and references for everything on Stellar | https://developers.stellar.org/docs |
+| 2 | **Soroban Smart Contracts** | Stellar's native smart contract platform — overview, docs, and getting started | https://stellar.org/soroban |
+| 3 | **JavaScript SDK** | The official JS library used to build transactions, interact with Horizon, and manage assets | https://github.com/stellar/js-stellar-sdk |
+| 4 | **Stellar Wallets Kit** | Connects your dApp to all major Stellar wallets with a single library | https://stellarwalletskit.dev |
+| 5 | **Stellar Lab** | Browser-based tool for building and testing transactions and exploring the Stellar API | https://lab.stellar.org |
+| 6 | **Stellar Expert (Mainnet)** | Block explorer — verify transactions, look up asset issuers, inspect accounts | https://stellar.expert/explorer/public |
+| 7 | **Stellar Expert (Testnet)** | Same as above but for testnet — use this to confirm your test payments | https://stellar.expert/explorer/testnet |
+| 9 | **Stellar GitHub** | All official repos — SDKs, Soroban CLI, Horizon, and more | https://github.com/stellar |
+| 10 | **Stellar Dev Discord** | The main community — ask questions, get help, meet other builders (~28,000 members) | https://discord.com/invite/stellardev |
+| 11 | **Stellar Community Fund (SCF)** | Apply for up to $150,000 in XLM to fund your Stellar project | https://communityfund.stellar.org |
+| 12 | **Grants & Funding** | Full overview of SDF funding programs including bug bounties up to $250K | https://stellar.org/grants-and-funding |
+| 13 | **SM Web Systems** | Learn how to develop on Stellar using Rust and Soroban. Video Tutorials | https://lms.smwebsystems.com/ |
+
+---
+
 
 
 
